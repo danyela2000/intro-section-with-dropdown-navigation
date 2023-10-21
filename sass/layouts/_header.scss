@@ -1,0 +1,8 @@
+.header {
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 992px) {
+        padding-bottom: 150px;
+    }
+ 
+}
