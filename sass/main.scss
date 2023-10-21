@@ -2,22 +2,28 @@
 // 1. Basics
 // -----------------------------
 
-@import "/sass/abstracts/index";
+@import "abstracts/index";
 
 // -----------------------------
 // 2. CSS reset 
 // -----------------------------
 
-@import "/sass/utilities/reset";
+@import "utilities/reset";
 
 // -----------------------------
 // 3. Typography
 // -----------------------------
 
-@import "/sass/core/index";
+@import "core/typography";
 
 // -----------------------------
 // 4. Layouts
 // -----------------------------
 
-@import "/sass/layouts/header";
+@import "layouts/header";
+
+// -----------------------------
+// 5. Components
+// -----------------------------
+
+@import "components/index";
