@@ -1,0 +1,98 @@
+@use "../abstracts/variables";
+
+.navbar {
+    background-color: $almost-white;
+    padding: 1rem 0.25rem;
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &-icon {
+          width: 2rem;
+          height: 1.125rem;
+        }
+    }
+
+    .offcanvas {
+        width: 64%;
+
+        &-body {
+            padding: 1rem 1.5rem;
+        }
+
+        &-backdrop.show {
+            opacity: .75;
+        }
+    }
+
+    .btn {
+        &:active {
+            border-color: transparent;
+        }
+
+        &-login,
+        &-register {
+            color: $medium-gray;
+            font-size: 0.875rem;
+
+            &:hover {
+                background-color: transparent;
+                color: $almost-black;
+            }
+        }
+
+        &-login {
+            padding: 1rem 0;
+        }
+
+        &-register {
+            border-radius: 14px;
+            border: 2px solid $medium-gray;
+            padding: 0.5rem 1rem;
+        }
+
+        &-close {
+            opacity: 1;
+        }
+    }
+
+    .nav-link {
+        font-size: $font-size-basis;
+        font-weight: $font-weight-medium;
+        line-height: 162.5%;
+
+        &.dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            &:after {
+                content: url("../../images/icon-arrow-down.svg");
+                margin: 0;
+                border: none;
+            }
+
+            &.show:after {
+                content: url("../../images/icon-arrow-up.svg");
+                margin: 0;
+            }
+        }
+    }
+
+    .dropdown {
+        &-menu {
+            border: none;
+        }
+
+        &-item {
+            color: $medium-gray;
+            font-size: $font-size-basis;
+            font-weight: $font-weight-medium;
+            padding: 0.5rem 1rem;
+        }  
+    }
+} 
