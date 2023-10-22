@@ -1,8 +1,9 @@
+@use "../abstracts/mixins" as *;
+
 .header {
     padding-bottom: 30px;
-
-    @media screen and (min-width: 992px) {
+    
+    @include media-breakpoint-up($lg) {
         padding-bottom: 150px;
     }
- 
 }

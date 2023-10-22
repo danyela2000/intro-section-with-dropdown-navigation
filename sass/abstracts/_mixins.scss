@@ -1,0 +1,18 @@
+// Media queries
+@mixin media-breakpoint-up($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-between($size-min, $size-max) {
+    @media only screen and (min-width: $size-min) and (max-width: $size-max) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-down($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
